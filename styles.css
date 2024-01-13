@@ -1,0 +1,71 @@
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 30px;
+            font-weight: normal;
+            margin-right: -50px;
+            padding: 10px 20px; /* Ajustement de l'espacement à l'intérieur des liens */
+            border: 3px solid #d4af37;
+            border-radius: 5px;
+            width: auto; /* Réinitialisation de la largeur automatique */
+        }
+
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .container {
+            padding:30px;
+        }
+
+        .jumbotron {
+            background-color: #fff;
+            padding: 50px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Ajout de marges à gauche pour les titres de la barre de navigation */
+        .navbar-nav .nav-link {
+            margin-left: 70px;
+        }
+
+        /* Style pour l'image de la bannière */
+        .banner-image {
+            width: 100%;
+            max-height: 200px; /* Hauteur maximale de l'image */
+            object-fit: cover;
+        }
+        /* Styles pour la barre de recherche */
+        .color
+
+
+
+/* Style pour le texte "Research" */
+#other h2 {
+    color: #333; /* Nouvelle couleur du texte "Research" */
+}
+
+
+
+test {
+    font-size: 140px;
+    color: rgba(100, 200, 200, 1.0);
+}
