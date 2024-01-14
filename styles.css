@@ -28,14 +28,19 @@ body {
 }
 
 .container {
-    padding:20px;
+    padding:25px;
 }
 
 .content-container {
   background: linear-gradient(to right, #000000, #444444, #000000); /* couleur foncee  */
   border-radius: 50px;
-  padding: 700px;
-  margin: 30px 0;
+  padding: 800px;
+
+  padding-bottom: 150%;/*augmente la profondeur*/
+
+  padding-left: 35%;
+  padding-block-start: 37%;
+  margin: 60px 0;
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -107,7 +112,7 @@ body {
 .logo-reseaux{
    position: relative; 
     margin-top: -70px;
-    margin-left: -300px; 
+    margin-left: -270px; 
     margin-bottom: -40px;
     width: 360px;
     max-height: 250px;
@@ -118,42 +123,47 @@ body {
 }
 
 .welcome-box {
-  position: absolute;
-  top: 850px; 
-  left: 720px; 
-  background: rgba(200, 200, 200, 0.8);
-  padding: 300px; 
-  border-radius: 10px;
-  font-size: 2rem;
-  color: #333;
-  text-align: left;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -50%); 
+        position: absolute;
+        top: 23%;
+       
+        background: rgba(200, 200, 200, 1);
+        padding: 300px;
+        left: 29%;
+        top: 25%;
+        padding-block-start: 600px;
+        padding-left: 30%;
+        padding-block-end: 500px;
+        border-radius: 10px;
+        font-size: 2rem;
+        color: #333;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+   .box-message {
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    font-family: 'serif';
+    font-size: 227%;
+    color: rgb(20, 20, 20, 0.8);
+    font-weight: bold; /* Ajoute du gras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ajoute un effet d'ombre */
+    z-index: 1;
 }
-.box-message{
 
-    margin-left: 20%;
-    margin-top: 70%;
-    font-size: large;
+.content-container {
 
-
-
-
+    position: relative;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.box-message {
+    margin-top: 20px; /* Ajustez la marge selon vos besoins */
+    text-align: center; /* Centrez le texte horizontalement */
+}
 
 
 
