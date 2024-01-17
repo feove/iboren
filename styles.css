@@ -3,12 +3,12 @@
 .content-container {
     background: linear-gradient(to right, #000000, #444444, #000000);
     border-radius: 50px;
-    padding: 10%; /* Utilise une unité relative pour le padding */
+    padding: 10%; 
     padding-bottom: 130%;
-    padding-left: 15%; /* Utilise une unité relative pour le padding-left */
+    padding-left: 15%; 
     margin: 3% 0 0;
-    margin-left: 3%; /* Utilise une unité relative pour le margin-left */
-    margin-right: 3%; /* Utilise une unité relative pour le margin-right */
+    margin-left: 3%; 
+    margin-right: 3%; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     color: #ffffff;
     position: relative;
@@ -37,7 +37,7 @@
     width: 20%;
     max-height: 250px;
     object-fit: cover;
-<<<<<<< HEAD
+
     z-index: 1; /*plan 1*/
 
 
@@ -72,8 +72,7 @@
     color: rgb(20, 20, 20, 0.8);
     font-weight: bold; /* Ajoute du gras */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
-=======
->>>>>>> 3dd61ae (responsive)
+
     z-index: 1;
 }
 
@@ -128,19 +127,19 @@
 
 .logo-jeu {
     position: relative;
-    width: 100%; /* Largeur de l'image en pourcentage du conteneur parent */
-    height: 100%; /* Hauteur de l'image en pourcentage du conteneur parent */
-    object-fit: contain; /* Ajuste la taille de l'image pour tenir à l'intérieur de la boîte */
-  /* Permet de centrer l'image verticalement */
-    margin: 0 auto; /* Centre horizontalement */
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+
+    margin: 0 auto; /* centre horiz */
     border-radius: 10px;
 }
 
 
 .welcome-box {
     position: absolute;
-    top: 60%;
-    right: 43%;
+    top: 109%;
+    left: 32%;
     max-width: 492px;
     height: auto;
     background-color: rgba(180, 180, 180, 0.9);
@@ -159,7 +158,7 @@
     padding: 3%;
     max-width: 200%;
     font-family: 'serif';
-    font-size: 1.8vw; /* Utilisation de vw pour rendre la taille du texte réactive à la largeur de la fenêtre */
+    font-size: 1.8vw; /* rend taille du texte reactive à la largeur*/
     color: rgb(20, 20, 20, 1);
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -178,11 +177,11 @@
 
 
 #other h2 {
-<<<<<<< HEAD
+
     color: #333; 
-=======
-    color: rgb(255, 255, 255, 1.0); /*couleur du texte */
->>>>>>> 3dd61ae (responsive)
+
+    color: rgb(255, 255, 255, 1.0);
+
 }
 /* Texte défilant */
 .messagedefilant {
@@ -207,7 +206,7 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: -137%; /* Ajuste la position en pourcentage de la hauteur de content-container */
+  margin-top: -137%; 
  
   overflow: hidden;
   position: relative;
@@ -229,11 +228,11 @@
 .messagedefilant div:after {
   position: relative;
   display: inline-block;
-  font-size: 2.5vw; /* Utilise une unité relative pour la taille de police */
+  font-size: 2.5vw; /* unite relative pour la taille de police */
   font-family: Cursive;
   white-space: nowrap;
   top: 0px;
-  color: #ffffff; /* Ajoutez cette ligne pour définir la couleur du texte en blanc */
+  color: #ffffff; 
 }
 
 .messagedefilant div span {
