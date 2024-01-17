@@ -1,4 +1,2 @@
-<<<<<<< HEAD
-Test
 
->>>>>> origin/main
+Test

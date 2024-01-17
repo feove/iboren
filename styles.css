@@ -3,8 +3,11 @@
 .content-container {
     background: linear-gradient(to right, #000000, #444444, #000000);
     border-radius: 50px;
+
     padding: 10%; 
+
     padding-bottom: 130%;
+
     padding-left: 15%; 
     margin: 3% 0 0;
     margin-left: 3%; 
@@ -14,21 +17,10 @@
     position: relative;
 }
 
-
-
-
-.gif-container {
-  position: absolute;
-  margin-left: 100px;
-  margin-top: 60px;
-  top: -10px; 
-  left: 10px;  Alignement à gauche */
-
+.content-container {
+    position: relative;
 }
 
-.gif-container img.gif-image {
-  height: 80px; 
-}
 
 .logo-reseaux {
     position: absolute;
@@ -39,47 +31,12 @@
     object-fit: cover;
 
     z-index: 1; /*plan 1*/
-
-
-}
-
-.welcome-box {
-        position: absolute;
-        top: 23%;
-       
-        background: rgba(200, 200, 200, 1);
-        padding: 300px;
-        left: 29%;
-        top: 25%;
-        padding-block-start: 600px;
-        padding-left: 30%;
-        padding-block-end: 500px;
-        border-radius: 10px;
-        font-size: 2rem;
-        color: #333;
-        text-align: left;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        transform: translate(-50%, -50%);
-        z-index: 0;
-    }
-
-   .box-message {
-    position: absolute;
-    top: 11%;
-    left: 8%;
-    font-family: 'serif';
-    font-size: 227%;
-    color: rgb(20, 20, 20, 0.8);
-    font-weight: bold; /* Ajoute du gras */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
-
-    z-index: 1;
 }
 
 .logo-forest{
 
     position: absolute;
-    top : 111%;
+    margin-top : 35%;
     right: 27%;
     width: 12%;
     height: auto;
@@ -92,7 +49,7 @@
 .volcan{
 
     position: absolute;
-    top : 115%;
+    margin-top : 35%;
     right: 10%;
     width: 15%;
     height: auto;
@@ -112,8 +69,8 @@
 }
 .box-jeu {
     position: absolute;
-    top: 60%;
-    right: 10%;
+    margin-top: 8%;
+    margin-left: 62%;
     width: 30%;
     max-width: 492px;
     height: auto;
@@ -122,6 +79,20 @@
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: -20px 20px 20px rgba(20, 20, 20, 0.9); /* Ajout de l'effet d'ombrage */
+
+    /* Media query pour les écrans de taille moyenne */
+    @media screen and (max-width: 768px) {
+        width: 30%;
+        right: 9%;
+        border-width: 6px; /* Ajuster la largeur de la bordure pour les écrans moyens */
+    }
+
+    /* Media query pour les écrans de petite taille */
+    @media screen and (max-width: 480px) {
+        width: 80%;
+        right: 5%;
+        border-width: 4px; /* Ajuster la largeur de la bordure pour les écrans petits */
+    }
 }
 
 
@@ -137,13 +108,17 @@
 
 
 .welcome-box {
-    position: absolute;
-    top: 109%;
-    left: 32%;
+    
+    left: 7%;
+    margin-top: 7%;
+    margin-right: 50%;
+
+    padding: 24%;
+    position: relative;
     max-width: 492px;
     height: auto;
     background-color: rgba(180, 180, 180, 0.9);
-    padding: 24%;
+   
     border-radius: 20px;
     box-shadow: -20px 20px 20px rgba(20, 20, 20, 0.9);
 }
@@ -165,9 +140,6 @@
 }
 
 
-.content-container {
-    position: relative;
-}
 
 .box-message {
     margin-top: 20px; 
@@ -231,7 +203,7 @@
   font-size: 2.5vw; /* unite relative pour la taille de police */
   font-family: Cursive;
   white-space: nowrap;
-  top: 0px;
+  margin-top: 0%;
   color: #ffffff; 
 }
 
@@ -241,7 +213,7 @@
 
 .messagedefilant div:after {
   position: absolute;
-  top: 0px;
+  margin-top: 0%;
   left: 0px;
   content: attr(data-text);
   animation: defilement2 9s infinite linear;
