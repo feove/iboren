@@ -1,99 +1,21 @@
-body {
-    background-color: #f0f0f0;
-}
 
-.navbar {
-    background-color: #333;
-}
-
-    
-
-.navbar-dark .navbar-nav .nav-link {
-    font-family: Consolas ;
-    color: rgb(255, 255, 0, 1.0);
-    font-size: 35px;
-    font-weight: normal;
-    margin-right: -50px;
-    padding: 20px 50px;
-    border: 3px solid #d4af37;
-    border-radius: 10px;
-    width: 230px;
-    text-align: center; 
-    display: inline-block; 
-}
-
-
-.navbar-dark .navbar-toggler-icon {
-    background-color: #fff;
-}
-
-.container {
-    padding:25px;
-}
 
 .content-container {
-  background: linear-gradient(to right, #000000, #444444, #000000); /* couleur foncee  */
-  border-radius: 50px;
-  padding: 800px;
-
-  padding-bottom: 150%;/*augmente la profondeur*/
-
-  padding-left: 35%;
-  padding-block-start: 37%;
-  margin: 60px 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  position: relative; 
-}
-
-
-.jumbotron {
-    background-color: #fff;
-    padding: 20px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-   
-.navbar-nav .nav-link {
-    margin-left: 80px;
-}
-
-
-.logo-container {
+    background: linear-gradient(to right, #000000, #444444, #000000);
+    border-radius: 50px;
+    padding: 10%; /* Utilise une unité relative pour le padding */
+    padding-bottom: 130%;
+    padding-left: 15%; /* Utilise une unité relative pour le padding-left */
+    margin: 3% 0 0;
+    margin-left: 3%; /* Utilise une unité relative pour le margin-left */
+    margin-right: 3%; /* Utilise une unité relative pour le margin-right */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
     position: relative;
 }
 
-.logo-bg {
-    position: absolute;
-    top: -4px;
-    left: -275px;
-    width: 500%; 
-    height: 100%; 
-    background-color: rgb(200, 255, 255, 1.0); /* casi blanc */
-    border-radius: 20px;
-    z-index: 0; /* plan 0 */
-}
 
-.logo {
-    position: relative; /* position par rapport à conteneur */
-    margin-top: -50px;
-    margin-left: -300px; 
-    margin-bottom: -40px;
-    width: 360px;
-    max-height: 250px;
-    object-fit: cover;
-    z-index: 1; /*plan 1*/
-}
+
 
 .gif-container {
   position: absolute;
@@ -108,15 +30,14 @@ body {
   height: 80px; 
 }
 
-
-.logo-reseaux{
-   position: relative; 
-    margin-top: -70px;
-    margin-left: -270px; 
-    margin-bottom: -40px;
-    width: 360px;
+.logo-reseaux {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 20%;
     max-height: 250px;
     object-fit: cover;
+<<<<<<< HEAD
     z-index: 1; /*plan 1*/
 
 
@@ -151,14 +72,103 @@ body {
     color: rgb(20, 20, 20, 0.8);
     font-weight: bold; /* Ajoute du gras */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+=======
+>>>>>>> 3dd61ae (responsive)
     z-index: 1;
 }
 
-.content-container {
+.logo-forest{
 
-    position: relative;
+    position: absolute;
+    top : 111%;
+    right: 27%;
+    width: 12%;
+    height: auto;
+   
+    border-radius: 15px;
+    box-shadow: -20px 20px 20px rgba(20, 20, 20, 0.9); /* Ajout de l'effet d'ombrage */
 }
 
+
+.volcan{
+
+    position: absolute;
+    top : 115%;
+    right: 10%;
+    width: 15%;
+    height: auto;
+   
+    border-radius: 15px;
+    box-shadow: -20px 20px 20px rgba(20, 20, 20, 0.9); /* Ajout de l'effet d'ombrage */
+}
+
+
+.logo-tresor {
+    position: absolute;
+    top: 50%; 
+    right: 18%; 
+    width: 6%;
+    z-index: 1; /*plan 1*/
+    transform: rotate(10deg);
+}
+.box-jeu {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    width: 30%;
+    max-width: 492px;
+    height: auto;
+    border: 8px solid rgba(255, 255, 255, 1.0);
+    padding: 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: -20px 20px 20px rgba(20, 20, 20, 0.9); /* Ajout de l'effet d'ombrage */
+}
+
+
+.logo-jeu {
+    position: relative;
+    width: 100%; /* Largeur de l'image en pourcentage du conteneur parent */
+    height: 100%; /* Hauteur de l'image en pourcentage du conteneur parent */
+    object-fit: contain; /* Ajuste la taille de l'image pour tenir à l'intérieur de la boîte */
+  /* Permet de centrer l'image verticalement */
+    margin: 0 auto; /* Centre horizontalement */
+    border-radius: 10px;
+}
+
+
+.welcome-box {
+    position: absolute;
+    top: 60%;
+    right: 43%;
+    max-width: 492px;
+    height: auto;
+    background-color: rgba(180, 180, 180, 0.9);
+    padding: 24%;
+    border-radius: 20px;
+    box-shadow: -20px 20px 20px rgba(20, 20, 20, 0.9);
+}
+
+
+
+.box-message {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    right: 3%;
+    padding: 3%;
+    max-width: 200%;
+    font-family: 'serif';
+    font-size: 1.8vw; /* Utilisation de vw pour rendre la taille du texte réactive à la largeur de la fenêtre */
+    color: rgb(20, 20, 20, 1);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.content-container {
+    position: relative;
+}
 
 .box-message {
     margin-top: 20px; 
@@ -168,41 +178,62 @@ body {
 
 
 #other h2 {
+<<<<<<< HEAD
     color: #333; 
+=======
+    color: rgb(255, 255, 255, 1.0); /*couleur du texte */
+>>>>>>> 3dd61ae (responsive)
 }
 /* Texte défilant */
 .messagedefilant {
   display: block;
-  margin-left: -110px;
-  margin-top: -650px;
-  padding: 60px;
+  margin-left: 30%;
+
+ 
+  padding: 2.5%;
   overflow: hidden;
   position: relative;
-  width: 150%;
-  max-width: 1500px;
-  max-height: 200px;
+  width: 90%;
+  max-width: 100px;
+  max-height: 300px;
   height: 100px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   background: linear-gradient(to right, rgba(150, 150, 150, 0.7), rgba(60, 60, 60, 0.3));
-
-  
 }
 
+.messagedefilant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -137%; /* Ajuste la position en pourcentage de la hauteur de content-container */
+ 
+  overflow: hidden;
+  position: relative;
+  width: 150%;
+  max-width: 30%;
+  height: 15%; /* Utilise une unité relative pour la hauteur */
+  max-height: 200px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(150, 150, 150, 0.7), rgba(60, 60, 60, 0.3));
+}
 
 .messagedefilant div {
   position: absolute;
-  min-width: 100%; 
+  min-width: 100%;
 }
 
 .messagedefilant div span,
 .messagedefilant div:after {
   position: relative;
   display: inline-block;
-  font-size: 5rem; 
-  font-family: Cursive; 
+  font-size: 2.5vw; /* Utilise une unité relative pour la taille de police */
+  font-family: Cursive;
   white-space: nowrap;
-  top: -60px; 
+  top: 0px;
+  color: #ffffff; /* Ajoutez cette ligne pour définir la couleur du texte en blanc */
 }
 
 .messagedefilant div span {
@@ -211,7 +242,7 @@ body {
 
 .messagedefilant div:after {
   position: absolute;
-  top: -60px;
+  top: 0px;
   left: 0px;
   content: attr(data-text);
   animation: defilement2 9s infinite linear;
@@ -234,4 +265,3 @@ body {
     margin-left: 0%;
   }
 }
-
