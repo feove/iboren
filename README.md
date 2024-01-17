@@ -1,5 +1,4 @@
 <<<<<<< HEAD
 Test
-=======
-# Test
->>>>>>> origin/main
+
+>>>>>> origin/main
