@@ -1,20 +1,31 @@
+.legende-logo {
+    position: absolute;
+   
+    margin-top: 29%;
+    font-size: 1vw;
+    color: ghostwhite;
+    margin-left: 67%;
+    padding: 1%;
+    padding-left: 2% ;
+    width: 18%;
+    height: auto;
+   
+    z-index: 1;
+}
 
 
 .content-container {
     background: linear-gradient(to right, #000000, #444444, #000000);
     border-radius: 50px;
-
     padding: 10%; 
-
     padding-bottom: 130%;
-
-    padding-left: 15%; 
-    margin: 3% 0 0;
     margin-left: 3%; 
     margin-right: 3%; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    color: #ffffff;
-    z-index: 0;
+    
+   border: 0.25vw solid orange;
+
+    animation: colorBorder infinite 4s;
     position: relative;
 }
 
@@ -30,7 +41,6 @@
     width: 20%;
     max-height: 250px;
     object-fit: cover;
-
     z-index: 1; /*plan 1*/
 }
 
@@ -70,42 +80,30 @@
 }
 .box-jeu {
     position: absolute;
-    margin-top: 8%;
-    margin-left: 62%;
+    margin-top: 7%;
+    margin-left: 60%;
     right: 10%;
-    max-width: 1800px;
+    width: 29%;
     height: auto;
-    border: 8px solid rgba(255, 255, 255, 1.0);
-    padding: 0;
+    padding: 0px;
+    border: 0.35vw solid rgba(255, 255, 255, 1.0);
     border-radius: 20px;
-    box-sizing: border-box;
     box-shadow: -20px 20px 20px rgba(20, 20, 20, 0.9); /* Ajout de l'effet d'ombrage */
-
-    /* Media query pour les écrans de taille moyenne */
-    @media screen and (max-width: 768px) {
-        width: 30%;
-        right: 9%;
-        border-width: 6px; /* Ajuster la largeur de la bordure pour les écrans moyens */
-    }
-
-    /* Media query pour les écrans de petite taille */
-    @media screen and (max-width: 480px) {&
-        width: 80%;
-        right: 5%;
-        border-width: 4px; /* Ajuster la largeur de la bordure pour les écrans petits */
-    }
+   overflow: hidden;
 }
-
 
 .logo-jeu {
     position: relative;
     width: 100%; 
     height: 100%; 
-    object-fit: contain; 
-
     margin: 0 auto; /* centre horiz */
-    border-radius: 10px;
+   
 }
+
+
+
+
+
 
 
 .welcome-box {
@@ -182,9 +180,9 @@
     right: 10%;
     width: 20%;
     height: auto;
-   
     border-radius: 15px;
     box-shadow: -5px 5px 5px rgba(20, 20, 20, 0.9); /* Ajout de l'effet d'ombrage */
+    
 }
 
 
@@ -195,7 +193,8 @@
     margin-top: 9%;
     margin-right: 50%;
 
-    padding: 24%;
+    padding: 28%;
+    padding-bottom: 18%;
     position: relative;
     max-width: 492px;
     height: auto;
@@ -215,6 +214,11 @@
     width: 7%;
     height: auto;
     animation: race-runner 10s linear infinite;
+
+}
+.logo-runner:hover {
+
+
 }
 
 
@@ -328,4 +332,80 @@
   100% {
     margin-left: 0%;
   }
+}
+.final-container {
+    position: relative;
+    background: linear-gradient(to right, #000000, #444444, #000000);
+    border-radius: 2vw;
+    padding: 5%;
+    margin: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 0.3vw solid orange;
+    z-index: 2;
+    animation: colorBorder 3s linear infinite; 
+}
+
+@keyframes colorBorder {
+    0% {
+        border-color: orange;
+        background-color: #FFA500; /* Ajout de la couleur de fond à la première étape */
+   
+    }
+    25% {
+        border-color: yellow;
+        background-color: #FFFF00;
+        
+    }
+    50% {
+        border-color: lime;
+        background-color: #00FF00;
+       
+    }
+    75% {
+        border-color: cyan;
+        background-color: #00FFFF;
+        
+    }
+    100% {
+        border-color: orange;
+        background-color: #FFA500;
+    
+    }
+}
+
+@keyframes rotate{
+
+
+ 0% {
+        
+        transform: rotate(0deg);
+    }
+    25% {
+        
+        transform: rotate(90deg);
+    }
+    50% {
+        
+        transform: rotate(180deg);
+    }
+    75% {
+        
+        transform: rotate(270deg);
+    }
+    100% {
+       
+        transform: rotate(360deg);
+    }
+
+}
+
+.boule {
+    margin-left: -10%;
+    margin-right: 10%;
+    padding: 1%; 
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 1.0);
 }
