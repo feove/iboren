@@ -8,9 +8,146 @@
     <link rel="stylesheet" type="text/css" href="navbar.css">
     <title>Page de présentation de jeu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+    <style>
+        body{
+            
+            height: 50vh;
+            background-image: url(media/fond_iboren.png);
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
 
+            cursor: url("media/pls.png"),pointer;
+}  
+    .ajust-welcome {
+        position: relative;
+        padding-right: 50%;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding-bottom: 10%;
+        border: 5px solid rgba(0, 0, 0, 0.5);
+        animation: pulse 2s infinite; 
+    }
+
+    .iboren-description {
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        right: 50%;
+
+        margin-right: 10%;
+        margin-left: 2%;
+        padding: 2%;
+        width: 90%;
+        padding-bottom: 1%;
+        max-width: 90%;
+        height: auto;
+        font-family: 'candara';
+        line-height: 2.8vw;
+        font-size: 1.8vw;
+        color: rgb(20, 20, 20, 1);
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0, 0, 200, 0.3), 1px 1px 1px rgba(0, 0, 200, 0.3);
+        text-align: center; 
+        overflow: hidden;
+        word-wrap: break-word; /* propriété pour le retour à la ligne */
+
+    }
+
+        
+    @keyframes pulse {
+        0% {
+            border-width: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        50% {
+            border-width: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+        100% {
+            border-width: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+
+    .iboren-description {
+        font-family: 'Arial', sans-serif;
+        
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .highlight {
+        color: #ff6600; /* Couleur orange pour le terme "Iboren" */
+    }
+
+    strong {
+        font-weight: bold;
+        color: #0099cc; /* Couleur bleue pour les termes "passionnée" et "créative" */
+    }
+
+    em {
+        font-style: italic;
+        color: #cc3300; /* Couleur rouge pour le terme "O’brien" */
+    }
+
+    .animated-word {
+        white-space: nowrap; /* Permet au texte de rester sur une seule ligne */
+        animation: bounceWord 1s infinite;
+    }
+
+    @keyframes bounceWord {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-5px);
+        }
+    }
+
+    .couleur {
+        animation: multi 2s infinite  ;
+    }
+
+    @keyframes multi {
+        0% {
+            color: orange;
+        }
+        20% {
+            color: yellow;
+        }
+        40% {
+            color: lime;
+        }
+        60% {
+            color: cyan;
+        }
+        80% {
+            color: royalblue;
+        }
+        100% {
+            color: magenta;
+        }
+    }
+
+
+    .obrien {
+        color: gold;
+        text-decoration: none;
+        position: relative; /* Ajout de position relative pour permettre le positionnement absolu de l'image */
+    }
+
+    </style>
+}
+</head>
+
+<body>
+<curse>
 <div class="navbar">
     <div class="navbar-item larger-margin">
         <div class="logo-bg">
@@ -23,4 +160,24 @@
     <div class="navbar-item larger-margin"></div>
 </div>
 
-<h6>IBOREN</h6>
+<div class="welcome-box ajust-welcome">
+   <div class="iboren-description">
+    <span class="highlight">Iboren</span>, l’entreprise fictive à l’origine de ce projet, incarne l’esprit d’une équipe <strong class="passionate">passionnée</strong> et
+    <strong class="creative">créative</strong>. Son nom est un astucieux anagramme de « O’Brien » faisant référence à l’informaticien
+    irlandais  <a href="https://fr.wikipedia.org/wiki/Walter_O%27Brien" class="obrien">Walter O’brien</a>. Le logo, représentant le nom de l’entreprise, utilise un pentagramme à
+    la place du « o » qui symbolise l’unité et la cohésion des cinq <span class="membre">membres</span> de notre groupe, chacun
+    apportant ses compétences et sa vision au sein du projet. Les <span class="couleur animated-word">couleurs</span> sélectionnées rappellent
+    l’univers du jeu, plus précisément les chapitres du <span class="animated-word">mode histoire</span> dont vous en apprendrez plus
+    dans la partie mécanique du jeu.
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>

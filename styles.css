@@ -97,10 +97,7 @@
     width: 100%; 
     height: 100%; 
     margin: 0 auto; /* centre horiz */
-   
 }
-
-
 
 
 
@@ -132,6 +129,7 @@
     padding: 3%;
     max-width: 200%;
     Font-family: Georgia, Times, Times New Roman, serif;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.3);
     line-height: 2.5vw;
     font-size: 1.5vw; /* rend taille du texte reactive à la largeur*/
     color: rgb(20, 20, 20, 1);
@@ -349,7 +347,7 @@
 @keyframes colorBorder {
     0% {
         border-color: orange;
-        background-color: #FFA500; /* Ajout de la couleur de fond à la première étape */
+        background-color: #FFA500; 
    
     }
     25% {
