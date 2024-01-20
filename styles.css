@@ -44,6 +44,8 @@
     z-index: 1; /*plan 1*/
 }
 
+
+
 .logo-forest{
 
     position: absolute;
@@ -331,18 +333,7 @@
     margin-left: 0%;
   }
 }
-.final-container {
-    position: relative;
-    background: linear-gradient(to right, #000000, #444444, #000000);
-    border-radius: 2vw;
-    padding: 5%;
-    margin: 15%;
-    margin-left: 3%;
-    margin-right: 3%;
-    border: 0.3vw solid orange;
-    z-index: 2;
-    animation: colorBorder 3s linear infinite; 
-}
+
 
 @keyframes colorBorder {
     0% {
@@ -406,4 +397,59 @@
     padding-bottom: 0%;
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 1.0);
+}
+.social-media {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+.social-network {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-text {
+    font-size: 3vw; /* Utilisation d'une unité relative vw pour la taille de la police */
+    margin-top: 10px; /* Ajout d'une marge en haut du texte */
+    text-align: center; /* Centre le texte */
+    cursor: pointer;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.instagram {
+    color: #e4405f; 
+}
+
+.twitter {
+    color: #1da1f2; 
+}
+.final-container {
+    position: relative;
+    background: linear-gradient(to right, #000000, #444444, #000000);
+    border-radius: 2vw;
+    padding: 2%;
+    margin: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 0.3vw solid orange;
+    z-index: 2;
+    animation: colorBorder 3s linear infinite; 
+
+}
+
+.account{
+
+    font-family: fantasy;
+    text-decoration: none;
+    color: wheat;
+
+
+
 }
