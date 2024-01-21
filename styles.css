@@ -144,6 +144,29 @@
     text-align: center; 
 }
 
+.text-meilbour{
+
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    right: 3%;
+    padding: 2%;
+    max-width: 200%;
+    Font-family: Georgia, Times, Times New Roman, serif;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.3);
+    line-height: 2.5vw;
+    font-size: 1.5vw; 
+    color: rgb(20, 20, 20, 1);
+    font-weight: bold;
+}
+
+.text-meilbour{
+
+    margin-top: 20px; 
+    text-align: center; 
+
+}
+
 
 /* ----------------------------------------------------------------*/
 .art-shadow {
@@ -176,15 +199,35 @@
 .logo-perso{
 
     position: absolute;
-    margin-top : 12%;
-    right: 10%;
-    width: 20%;
+    top :15%;
+    left: 110%;
+    right: 4%;
+    width: 45%;
     height: auto;
     border-radius: 15px;
     box-shadow: -5px 5px 5px rgba(20, 20, 20, 0.9); /* Ajout de l'effet d'ombrage */
     
 }
 
+.contour-logo{
+    padding: 5px;
+    border-radius: 15px;
+    border: solid 6px;   
+    color: grey; 
+}
+
+.email-gif{
+    width: 13vw;
+    height: auto;
+    position: absolute;
+    padding: 1%;
+    left: 125%;
+    margin-top: 28%;
+    z-index: 10;
+
+
+
+}
 
 
 .descritpion-hero {
@@ -213,7 +256,7 @@
     left: 9%;
     width: 7%;
     height: auto;
-    animation: race-runner 10s linear infinite;
+    animation: race-runner 11s linear infinite;
 
 }
 .logo-runner:hover {
@@ -228,7 +271,7 @@
         transform: scaleX(1);
     }
     50% {
-        left: 49%;
+        left: 55%;
         transform: scaleX(1);
     }
     51% {
@@ -398,57 +441,43 @@
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 1.0);
 }
-.social-media {
-        margin-bottom: 20px;
-        display: inline-block;
-    }
+
 
 .social-network {
-    max-width: 100%; 
+    width : 5vw;
     height: auto;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-right: 8%;
+
 }
 
-.social-text {
-    font-size: 3vw; /* Utilisation d'une unité relative vw pour la taille de la police */
-    margin-top: 10px; /* Ajout d'une marge en haut du texte */
-    text-align: center; /* Centre le texte */
-    cursor: pointer;
-}
 
-.facebook {
-    color: #3b5998;
-}
 
-.instagram {
-    color: #e4405f; 
-}
-
-.twitter {
-    color: #1da1f2; 
-}
 .final-container {
-    position: relative;
+    position: absolute;
     background: linear-gradient(to right, #000000, #444444, #000000);
     border-radius: 2vw;
     padding: 2%;
+    padding-left: 11%;
+    padding-right: 11%;
     margin: 15%;
     margin-left: 3%;
     margin-right: 3%;
     border: 0.3vw solid orange;
     z-index: 2;
     animation: colorBorder 3s linear infinite; 
-
+    width: 94vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between ;
+    
 }
 
 .account{
 
-    font-family: fantasy;
     text-decoration: none;
-    color: wheat;
+    color: gold;
+    font-size: 1.6vw;
+    font-family: fantasy;
 
 
 
