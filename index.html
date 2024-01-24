@@ -18,7 +18,7 @@
                 background-attachment: fixed; 
                 cursor: none; 
             }
-
+            
     </style>
 </head>
     <div class="circle"></div>
@@ -128,7 +128,18 @@ function animateCircles() {
     }
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+            const logoRunner = document.querySelector('.logo-runner');
+            const bulle = document.querySelector('.bulle');
 
+            logoRunner.addEventListener('mouseover', function () {
+                bulle.style.opacity = 1;
+            });
+
+            logoRunner.addEventListener('mouseout', function () {
+                bulle.style.opacity = 0;
+            });
+        });
     </script>
 
 
@@ -152,7 +163,7 @@ function animateCircles() {
         <img src="media\reseaux.png" alt="le_logo" class="logo-reseaux"></div>
     </a>
     <div class="messagedefilant">
-        <div data-text="Welcome !"><span>Welcome !</span></div>
+        <div data-text ="Welcome !"><span >Welcome !</span></div>
     </div>
 
     <div class="box-jeu">
@@ -191,8 +202,11 @@ function animateCircles() {
     <div class="box-hero">
         <div class="art-shadow">Le Héros de l'histoire</div>
     </div>
-
-    <img src="media/runner.gif" alt="runner" class="logo-runner">
+    
+    <img src="media/my-bag-pls.png" alt="mon sac" class="bulle">
+    <img src="media/runner.gif" alt="runner" class="logo-runner" >
+    
+ 
 
     <div class="descritpion-hero">
         <div class="text-meilbour">Bienvenue dans le monde de "TreasHunt", un jeu de parcours palpitant qui vous transporte dans un univers empreint de mystères et de défis captivants. Incarnez un jeune aventurier intrépide, fraîchement débarqué sur une île légendaire au cœur de l'océan, réputée pour abriter un volcan au caractère explosif.

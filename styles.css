@@ -62,9 +62,9 @@
 .volcan{
 
     position: absolute;
-    margin-top : 35%;
-    right: 10%;
-    width: 15%;
+    margin-top : 36%;
+    right: 6%;
+    width: 19%;
     height: auto;
    
     border-radius: 15px;
@@ -181,7 +181,7 @@
 
 .box-hero {
     position: relative;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 5%;
     max-width: 60%;
     width: 40%;
@@ -225,8 +225,6 @@
     margin-top: 28%;
     z-index: 10;
 
-
-
 }
 
 
@@ -248,8 +246,6 @@
    
 }
 
-
-
 .logo-runner {
     position: absolute;
     margin-top: 2%;
@@ -257,13 +253,33 @@
     width: 7%;
     height: auto;
     animation: race-runner 11s linear infinite;
-
-}
-.logo-runner:hover {
-
-
 }
 
+.bulle {
+    margin-top: -2.5%;
+    margin-left: 4.5%;
+    position: absolute;
+    width: 5%;
+    height: auto;
+    z-index: 10;
+    animation: race-bulle 11s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+@keyframes race-bulle {
+    from {
+        left: 9%;
+    }
+    50% {
+        left: 55%;
+    }
+    51% {
+    }
+    to {
+        left: 9%;
+    }
+}
 
 @keyframes race-runner {
     from {
@@ -282,8 +298,6 @@
         left: 9%;
     }
 }
-
-
 /* ----------------------------------------------------------------*/
 
 
@@ -319,12 +333,13 @@
 
   margin-top: -137%; 
   margin-left: 35%;
- 
+  
+  color: white;
   overflow: hidden;
   position: relative;
   width: 150%;
   max-width: 30%;
-  height: 5%; /* Utilise une unité relative pour la hauteur */
+  height: 5%; 
   max-height: 200px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -340,15 +355,18 @@
 .messagedefilant div:after {
   position: relative;
   display: inline-block;
-  font-size: 2.5vw; /* unite relative pour la taille de police */
+  font-size: 2.5vw; 
   font-family: Cursive;
   white-space: nowrap;
   margin-top: 0%;
-  color: #ffffff; 
+ 
+  
+ 
 }
 
 .messagedefilant div span {
   animation: defilement 9s infinite linear;
+  
 }
 
 .messagedefilant div:after {
@@ -357,6 +375,7 @@
   left: 0px;
   content: attr(data-text);
   animation: defilement2 9s infinite linear;
+ 
 }
 
 @keyframes defilement {
