@@ -497,7 +497,39 @@
     color: gold;
     font-size: 1.6vw;
     font-family: fantasy;
-
-
-
 }
+
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        z-index: 99999;
+    }
+    50% {
+        opacity: 1;
+        z-index: 99999;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#preloader {
+    transform: rotate(5deg); /* Rotation de 5 degrés */
+    background: #000 url(media/loading-web.gif) center center no-repeat; /* Centrer l'image et empêcher la répétition */
+    background-size: 150vh; /* Ajuster la taille de l'image */
+    height: 200vh; /* Augmenter la taille de l'élément préchargeur */
+    width: 200%; /* Augmenter la largeur pour couvrir toute la largeur de la fenêtre */
+    position: fixed;
+    top: -50vh; /* Positionner au-dessus de la fenêtre */
+    left: -50%; /* Positionner à gauche */
+    z-index: 90000;
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    animation:  fadeOut 1s 1 normal forwards;
+    opacity: 1;
+    z-index: -20000;
+}
+
