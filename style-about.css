@@ -84,7 +84,7 @@ section img {
 
 .sec {
     position:relative;
-    top: -8.4%;
+    top: -8.3%;
     background-color: #5b5b1f;
     height: 100%;
     
@@ -93,7 +93,7 @@ section img {
 .sec::before {
     content: '';
     position: absolute;
-    top: -2.3%;
+    top: -1.9%;
     width: 100%;
     height: 100px;
     background : linear-gradient(to top,#5b5b1f,transparent);
@@ -127,10 +127,8 @@ section img {
 .process-wrapper {
     
     max-width:100%;
-    
-
     position: relative;
-    top: 10%;
+    top: 14%;
 
 
 }
@@ -140,7 +138,7 @@ section img {
 
     margin:auto;
     height:150px;
-    margin-top:65px;
+    margin-top:4.5%;
 }
 
 #progress-bar-container ul {
@@ -150,11 +148,12 @@ section img {
     z-index:9999;
     position:absolute;
     width:100%;
-    margin-top:-40px;
+    margin-top:-10px; /*cercle points mois*/
 }
 
 #progress-bar-container li:before {
     content:" ";
+
     display:block;
     margin:auto;
     width:50px;
@@ -168,7 +167,7 @@ section img {
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
     border:solid 2px #fff;
          
-    background: linear-gradient(to right, #039037 0%,#fff 100%); /*Cercles*/
+    background: linear-gradient(to right, #fff 0%,#00A7AF 100%); /*Cercles*/
 }
 
 #progress-bar-container li {
@@ -177,8 +176,8 @@ section img {
     width:20%;
     text-align:center;
     color:#aaa;
-    text-transform:uppercase;
-    font-size:11px;
+    
+    
     cursor:pointer;
     font-weight:700;
     transition:all ease 0.2s;
@@ -191,11 +190,12 @@ section img {
     position:absolute;
     width:100%;
     bottom:-150%;
-    font-size: 1.5vw;
+    top: 260%;
+    font-size: 2vw;
 }
 
 #progress-bar-container li.active, #progress-bar-container li:hover {
-     color:#41B257; 
+    color:#fff; 
     text-shadow: 0 1px 0 #fff, 0 1px 0 #000000;
 }
 
@@ -208,7 +208,7 @@ section img {
     margin:auto;
     border:solid 7px #fff;
     border-radius:50%;
-    margin-top:30px;
+    margin-top:50px; /*juste les petits points*/
     box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
     transition:all ease 0.2s;
      
@@ -229,19 +229,20 @@ section img {
     height:10px;
     position:absolute;
     left:10%;
-    top:57px;
+    top:72%;
     z-index:1;
     border-radius:50px;
     transition:all ease 0.9s;
 }
 
-#progress-bar-container #line-progress {
+#progress-bar-container #line-progress {  
     content:" ";
     width:3%;
     height:100%;
     background: #0826BD;     
-    background: linear-gradient(to right, #0826BD 0%,#2ea3b7 100%); 
+    background: linear-gradient(to right, #AF0000 0%,#FFC300 50%, #5EF828 100%); 
     position:absolute;
+
     z-index:2;
     border-radius:50px;
     transition:all ease 0.9s;
@@ -251,13 +252,14 @@ section img {
 #progress-content-section {
     width:90%;
     margin: auto;
+
     background: #f3f3f3;
     border-radius: 20px;
 }
 
 #progress-content-section .section-content {
     padding:30px 40px;
-    margin-top: 5%;
+    margin-top: 10%;
     text-align:center;
 }
 
@@ -279,6 +281,7 @@ section img {
     animation: FadeInUp 700ms ease 1;
     animation-fill-mode:forwards;
     transform:translateY(15px);
+    scale: 100%;
     opacity:0;
 }
 
@@ -290,11 +293,52 @@ section img {
     0% {
         transform:translateY(15px);
         opacity:0;
+        scale: 0%;
+    }
+    80% {
+        transform:translateY(20px);
+        scale: 110%;
+        opacity:0.8;
     }
     
     100% {
         transform:translateY(0px);
         opacity:1;
+        scale: 100%;
     }
 }
 /*-----------------------------------------------------*/
+
+
+
+.texte-partie {
+    position: absolute;
+    color: #fff;
+    font-size: 0.1vw;
+    transform: translateX(-180%);
+    opacity: 0;
+    font-weight: 700;
+
+    transition: opacity 0.5s, transform 0.5s ease-in-out, font-size ease-in-out 0.7s ;
+}
+
+.partie-content {
+    position: relative;
+    top: 8%;
+    left: 10%; 
+   
+}
+
+.rect-real {
+   
+  
+
+}
+
+.texte-partie.active {
+    opacity: 1;
+    font-size: 3.5vw;
+    transform: translateX(-10%);
+
+}
+

@@ -76,9 +76,12 @@
 
     </section>
 
-    <div class="sec" > <h4 class="title-police"> Réalisation </h4>   
+    <div class="sec" > <h4 class="title-police"> Réalisation</h4>  
 
 
+    <div class="partie-content"> <h3 class="texte-partie" id="real"> <div class="rect-real">Treashunt</div> </h3></div>
+    
+    
         <div class="process-wrapper">
 
             <div id="progress-bar-container">
@@ -162,17 +165,16 @@
             $(".analysis").addClass("active").siblings().removeClass("active");
         });
 
-   </script>
 
     
+   </script>
 
-
-  
     <script>
     let mount = document.getElementById('mountain');
     let grass = document.getElementById('grass');
     let nuage1 = document.getElementById('nuage1');
     let nuage2 = document.getElementById('nuage2');
+  
     var largeurFenetre = window.innerWidth;
 
     window.addEventListener('scroll', function() {
@@ -184,26 +186,46 @@
         nuage2.style.left = valueY * -0.8 + largeurFenetre*0.5 +'px';
 
          
-    var title = document.querySelector('.title-police');
-    var opacity = valueY / 500; 
+        var title = document.querySelector('.title-police');
+        var opacity = valueY / 500; 
 
-    
-    opacity = Math.min(Math.max(opacity, 0), 1);
+        
+        opacity = Math.min(Math.max(opacity, 0), 1);
 
-    
-    title.style.opacity = opacity*1.8;
+        
+        title.style.opacity = opacity*1.8;
 
-    var brightness = 1 + (valueY); 
+        var brightness = 1 + (valueY); 
 
-    brightness = Math.min(Math.max(brightness, 0), 1);
+        brightness = Math.min(Math.max(brightness, 0), 1);
 
 
-    title.style.filter = "brightness(" + brightness + ")";
-       
+        title.style.filter = "brightness(" + brightness + ")";
     });
+    
+    </script>
+    <script>
+        
+        const revealText = document.querySelector('.texte-partie')
+
+        window.addEventListener('scroll', () => {
+
+            const { scrollTop, clientHeight} = document.documentElement;
+
+            const deltaTop = revealText.getBoundingClientRect().top;
+            console.log(deltaTop);
+            if (scrollTop > (scrollTop + deltaTop).toFixed() *0.3) {
+                revealText.classList.add('active');
+
+            }
+        })
+
+
+
+
     </script>
 
 
  
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </body>
