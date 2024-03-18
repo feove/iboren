@@ -94,7 +94,7 @@ section img {
     content: '';
     position: absolute;
     top: -1.9%;
-    width: 100%;
+    width: 120%;
     height: 100px;
     background : linear-gradient(to top,#5b5b1f,transparent);
     z-index: 100000;
@@ -342,3 +342,15 @@ section img {
 
 }
 
+.liane-col{
+    top: 20%;
+    position: absolute;
+    z-index: 1000000000000;
+    width: 100%;
+    height: auto;
+    left: 10%;
+    transform : rotateZ(0deg);
+
+
+
+}
