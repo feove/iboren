@@ -64,8 +64,15 @@
     <h4 class="title-download">Téléchargement</h4>
     <div class="pdf" > 
         <h3 class="pdf-content">Guide d'installation</h3>
-        <p class="texte-install">Cliquez sur le lien ci-dessous pour télécharher le guide :</p>
-        <a href="media/download/test.txt" download="test">Le Guide</a>
+        <p class="texte-install">Cliquez sur le bouton ci-dessous pour télécharher le guide :</p>
+        
+        <a href="media/download/test.txt" download="guide-de-téléchargement" >
+            <div>
+                <img src="media/download/download-but-pdf.png" class="download-button" alt="pdf" >
+
+            </div>
+        
+        </a>
 
     </div> 
     <div class="jeu">
@@ -78,21 +85,33 @@
 
 <script>
 
-   /* let forest = document.getElementById('hole');
-    let originalWidth = forest.offsetWidth; 
-    let lastScrollY = 0; 
+// let forest = document.getElementById('hole');
+// let originalWidth = forest.offsetWidth;
+// let lastScrollY = 0;
 
-    window.addEventListener('scroll', function() {
-        let currentScrollY = window.scrollY; 
+// window.addEventListener('scroll', function() {
+//     let currentScrollY = window.scrollY;
+//     let maxScrollY = 500; // La valeur maximale de défilement à laquelle vous souhaitez appliquer les styles max
+//     let maxTop = -40;
+//     let maxScale = 120;
+//     let maxLeft = -5;
+//     let maxWidth = 120;
 
-        let deltaY = currentScrollY - lastScrollY; 
-        let newWidth = originalWidth - deltaY * 0.8; 
+//     // Calcul de la progression de défilement
+//     let progress = Math.min(currentScrollY / maxScrollY, 1); // Assure que la valeur de progression est entre 0 et 1
 
-    
-        forest.style.width = `${newWidth}px`;
+//     // Calcul des valeurs interpolées
+//     let top = -41 + (maxTop + 41) * progress;
+//     let scale = 100.2 + (maxScale - 100.2) * progress;
+//     let left = -0.4 + (maxLeft + 0.4) * progress;
+//     let width = 100.9 + (maxWidth - 100.9) * progress;
 
-        lastScrollY = currentScrollY;
-    });*/
+//     // Application des styles interpolés à l'élément #hole
+//     forest.style.top = top + '%';
+//     forest.style.transform = 'scale(' + scale / 100 + ')';
+//     forest.style.left = left + '%';
+//     forest.style.width = width + '%';
+// });
 
 
 </script>

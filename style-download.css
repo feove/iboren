@@ -93,8 +93,21 @@ body {
 }
 
 
+.texte-install {
+    font-size: 1.4vw; /* Taille de la police en rem */
+    color: #d2d2d2; /* Couleur du texte */
+    margin-top: 5%; /* Marge en haut en % */
+    text-align: center; /* Alignement du texte au centre */
+    font-style: italic; /* Style de police italique */
+    font-weight: bold; /* Poids de la police en gras */
+}
 
 
+.texte-install::before {
+    content: "•"; /* Ajoute le symbole "•" */
+	font-size: 1.4vw;
+    margin-right: 1%; /* Marge à droite pour séparer le symbole du texte */
+}
 
 
 #download-button {
@@ -105,6 +118,13 @@ body {
 	height: auto;
 	z-index: 2;
 }
+.download-button{
+	margin-top: 5%;
+	margin-left: 13%;
+	width: 70%;
+
+}
+
 #plaines{
 	
 	z-index: 2;
@@ -115,10 +135,17 @@ body {
 }
 
 #hole {
-
 	
 	scale: 100.2%;
 	width: 100.9%;
 	left: -0.4%;
+
+}
+
+#hole:hover{
+	top: -40%;
+	scale: 120%;
+	left: -5%;
+	width: 120%;
 
 }
