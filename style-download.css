@@ -27,12 +27,75 @@ body {
 
 }
 
-.about {
-	position: absolute;
-	top: 150%;
-	
-
+.title-download{
+	color: white;
+	top: 7%;
+	left: 31%;
+    position: absolute;
+    font-family: 'Bogart', sans-serif;
+    font-weight: 600; 
+    text-decoration: none;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+	z-index: 8;
+  
+    font-size: 5vw;
+    white-space: nowrap;
+    filter: brightness(1);
 }
+ 
+.box-download{
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 22%;
+	padding-bottom: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	position: absolute;
+	top: 100%;
+	background-color: rgb(93, 192, 93);
+	width: 101%;
+	height: 200vh;
+	z-index: 5;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+
+.pdf {
+    justify-content: center;
+    width: 46%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 70%, rgba(198, 198, 198, 0.5) 100%), rgb(59, 100, 108);
+    border-radius: 20px; /* Adjust border radius as needed */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); /* Shadow effect */
+}
+
+.pdf-content {
+	
+    color:rgb(255, 255, 255);
+    margin-left: 18%;
+    margin-top: 5%;
+    font-size: 2.5vw;
+	font-weight: 600; 
+    font-family: 'Montserrat', sans-serif; /* Adding Montserrat font */
+}
+
+
+.jeu{
+	justify-content: center;
+	
+    width: 46%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 70%, rgba(198, 198, 198, 0.5) 100%), rgb(64, 138, 160);
+    border-radius: 20px; /* Adjust border radius as needed */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); /* Shadow effect */
+}
+
+
+
+
+
 
 #download-button {
 	position: absolute;
@@ -43,11 +106,19 @@ body {
 	z-index: 2;
 }
 #plaines{
-
-	position: absolute;
-	top: -45%;
-	left: -8%;
-	width: 140%;
 	
-	height: auto;
+	z-index: 2;
+	position: absolute;
+	width: 101%;
+	left: -0.6%;
+	
+}
+
+#hole {
+
+	
+	scale: 100.2%;
+	width: 100.9%;
+	left: -0.4%;
+
 }

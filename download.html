@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="style-download.css">
     <link rel="stylesheet" type="text/css" href="navbar.css">
-
-    <title>Page de présentation de jeu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Page de présentation de jeu</title>
 <style>
      ::-webkit-scrollbar {
             width: 10px;
@@ -36,7 +35,7 @@
 <body>
 
 
-
+   
 
 <div style="border: 0.2vw solid green;" class="navbar">
     <div class="navbar-item larger-margin">
@@ -53,18 +52,50 @@
 
     
 <section class="home">
-    <img src="media/parallax-test.jpg">
+   
     <img id="download-button" src="media/download-button.png">
-     <!-- <img  id="plaines" src="media/plaines.png"> -->
+    <img  id="plaines" src="media/plaine.png">
+    <img  id="hole" src="media/plaine-hole.png">
+  
 </section>
 
-<section class="about">
+
+<div class="box-download">
+    <h4 class="title-download">Téléchargement</h4>
+    <div class="pdf" > 
+        <h3 class="pdf-content">Guide d'installation</h3>
+        <p class="texte-install">Cliquez sur le lien ci-dessous pour télécharher le guide :</p>
+        <a href="media/download/test.txt" download="test">Le Guide</a>
+
+    </div> 
+    <div class="jeu">
+        <h3 class="pdf-content">Téléchargement du jeu</h3>
+
+    </div>
+
+</div>
+
+
+<script>
+
+   /* let forest = document.getElementById('hole');
+    let originalWidth = forest.offsetWidth; 
+    let lastScrollY = 0; 
+
+    window.addEventListener('scroll', function() {
+        let currentScrollY = window.scrollY; 
+
+        let deltaY = currentScrollY - lastScrollY; 
+        let newWidth = originalWidth - deltaY * 0.8; 
+
     
-    <h3>Hello world ! </h3>
+        forest.style.width = `${newWidth}px`;
 
-</section>
+        lastScrollY = currentScrollY;
+    });*/
 
 
+</script>
 
 
 
