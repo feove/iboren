@@ -1,10 +1,10 @@
 body {
 
 	height: 300vh;
-	padding-top: 0;
+	padding-top: -10%;
 	margin: 0;
 	top: 0;
-	 overflow-x: hidden;
+	overflow-x: hidden;
 
 }
 
@@ -13,15 +13,21 @@ body {
 .home {
  	
  	display: flex;
+
+
+	
    
 }
 
 .home img {
 
 	position: absolute;
+	bottom: 0;
+	
+
 	left: -0%;
 	width: 100%;
-	bottom: 0;
+
 	z-index: -1;
 
 
@@ -52,7 +58,7 @@ body {
 	padding-right: 5%;
 	position: absolute;
 	top: 100%;
-	background-color: rgb(93, 192, 93);
+	background-color: rgb(62, 130, 62);
 	width: 101%;
 	height: 200vh;
 	z-index: 5;
@@ -67,8 +73,8 @@ body {
     width: 46%;
     height: 100%;
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 70%, rgba(198, 198, 198, 0.5) 100%), rgb(59, 100, 108);
-    border-radius: 20px; /* Adjust border radius as needed */
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); 
 }
 
 .pdf-content {
@@ -88,25 +94,25 @@ body {
     width: 46%;
     height: 100%;
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 70%, rgba(198, 198, 198, 0.5) 100%), rgb(64, 138, 160);
-    border-radius: 20px; /* Adjust border radius as needed */
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4); 
 }
 
 
 .texte-install {
-    font-size: 1.4vw; /* Taille de la police en rem */
-    color: #d2d2d2; /* Couleur du texte */
-    margin-top: 5%; /* Marge en haut en % */
-    text-align: center; /* Alignement du texte au centre */
-    font-style: italic; /* Style de police italique */
-    font-weight: bold; /* Poids de la police en gras */
+    font-size: 1.4vw; 
+    color: #d2d2d2; 
+    margin-top: 10%; 
+    text-align: center;
+    font-style: italic; 
+    font-weight: bold; 
 }
 
 
 .texte-install::before {
-    content: "•"; /* Ajoute le symbole "•" */
+    content: "•"; 
 	font-size: 1.4vw;
-    margin-right: 1%; /* Marge à droite pour séparer le symbole du texte */
+    margin-right: 1%; 
 }
 
 
@@ -142,10 +148,174 @@ body {
 
 }
 
-#hole:hover{
-	top: -40%;
-	scale: 120%;
-	left: -5%;
-	width: 120%;
 
+.download-button:hover{
+
+	scale: 110%;
 }
+
+#transit-box {
+	overflow-x: hidden;
+    position: absolute;
+    top: 97%;
+    width: 100%;
+    height: 7%;
+   background-image: linear-gradient(to top, rgba(62, 130, 62, 1) 70%, rgba(93, 192, 93, 0));
+    z-index: 80000;
+    filter: blur(5px);
+}
+
+
+/*--------Download Button-----------*/
+
+@keyframes button-shadow{
+	from{
+	  transform: rotate(0);
+	  bottom: -5px;
+	  right: -5px;
+	  opacity: 1;
+	}to{
+	  transform: rotate(40deg);
+	  bottom: 50px;
+	  right: -60px;
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes button-arrow-rotate{
+	0%{
+		width: 15px;
+		margin: -25px auto 0;
+	}1%{
+		width: 10px;
+		height: 0px;
+		margin-top: 15px;
+		transform: rotate(45deg);
+	}100%{
+		width: 10px;
+		margin-top: 15px;
+		transform: rotate(45deg);
+		height: 35px;
+	}
+  }
+  
+  @keyframes button-arrow-down{
+	from{
+		bottom: -25px;
+		opacity: 1;
+	}to{
+		bottom: -40px;
+		opacity: 0;
+	}
+  }
+  
+  @keyframes button-arrow-up{
+	0%{
+		height: 20px;
+		transform: rotateZ(45deg);
+		right: -7px;
+	}1%{
+		right: 0px;
+		height: 10px;
+		width: 0;
+		transform: rotateZ(0);
+	}100%{
+		right: 0px;
+		height: 10px;
+		width: 20px;
+		transform: rotateZ(0);
+	}
+  }
+  
+ 
+  
+  button{
+	background-color: #fff;
+	top: 50%;
+	width: 20%;
+	height: 20%;
+
+	outline: none;
+	position: relative;
+
+	cursor: pointer;
+	transition: all .5s;
+	border-radius:80px;
+
+	
+
+
+	.arrow{
+	  height: 25px;
+	  width: 15px;
+	  background-color: #99f3bd;
+	  border-radius: 2px;
+	  margin: -25px auto 0;
+	  position: relative;
+	  &:after{
+		content:'';
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		background-color: #99f3bd;
+		border-radius: 2px;
+		transform: rotateZ(45deg) translate(1px,7px);
+		bottom: 0;
+		right: -7px;
+		transition: all .5s;
+		transition-delay: .5s;
+	  }
+	  &:before{
+		content: '';
+		background-color: #99f3bd;
+		width: 25px;
+		height: 10px;
+		position: absolute;
+		left: -5px;
+		bottom: -25px;
+		border-radius: 2px;
+		transition: all .5s;
+	  }
+	}
+	
+	&:after,&:before{
+	  content:'';
+	  position: absolute;
+	  z-index: -1;
+	  background-color: #99f3bd;
+	  height: 100%;
+	  width: 100%;
+	  bottom: -5px;
+	  right: -5px;
+	  border-radius: 5px;
+	}
+	
+	&:after{
+		animation-play-state: pause; 
+	}
+	
+	&:active{
+	  width: 180px;
+	  height: 90px;
+	}
+	
+	&:focus{
+	  &:after{   
+		animation: button-shadow 1s;
+	  }
+	  
+	  .arrow{
+		animation: button-arrow-rotate .5s forwards;
+		animation-delay: .5s;
+		&:after{
+		  animation: button-arrow-up .5s forwards;
+		  animation-delay: .5s;
+		}
+		&:before{
+		  animation: button-arrow-down .5s forwards;
+		}
+	  }
+	}
+  }
+
+/*-------------------*/

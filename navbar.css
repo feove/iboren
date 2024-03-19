@@ -4,7 +4,7 @@
 .navbar {
 
     background: linear-gradient(to right, #000000, #444444, #000000);
-    
+    z-index: 500000;
     text-align: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center; 
     margin: 3%;
+    
     border: 0.2vw solid yellow;
 }
 
@@ -21,6 +22,7 @@
 
 .navbar-item {
     margin-top: 3%;
+    padding-left: 2%;
     flex: 1;
 
 

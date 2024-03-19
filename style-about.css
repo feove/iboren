@@ -1,11 +1,8 @@
-
+x
 .posi{
     bottom: 10%;
-
     top: 0%;
     z-index: 100000000000000;
-
-
 }
 .image {
     display: flex; 
@@ -128,7 +125,7 @@ section img {
     
     max-width:100%;
     position: relative;
-    top: 14%;
+    top: 18%;
 }
 #progress-bar-container {
     position:relative;
@@ -329,6 +326,7 @@ section img {
 
 .rect-real {
    
+    margin-top: 20%;
   
 
 }

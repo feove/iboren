@@ -56,6 +56,9 @@
     <img id="download-button" src="media/download-button.png">
     <img  id="plaines" src="media/plaine.png">
     <img  id="hole" src="media/plaine-hole.png">
+    <div id="transit-box"> qzdqzdqzdqzd </div>
+
+
   
 </section>
 
@@ -64,9 +67,9 @@
     <h4 class="title-download">Téléchargement</h4>
     <div class="pdf" > 
         <h3 class="pdf-content">Guide d'installation</h3>
-        <p class="texte-install">Cliquez sur le bouton ci-dessous pour télécharher le guide :</p>
+        <p class="texte-install">Cliquez sur le bouton ci-dessous pour télécharger le guide :</p>
         
-        <a href="media/download/test.txt" download="guide-de-téléchargement" >
+        <a href="media/download/Plan_Soutenance.pdf" download="guide-de-téléchargement" >
             <div>
                 <img src="media/download/download-but-pdf.png" class="download-button" alt="pdf" >
 
@@ -77,6 +80,14 @@
     </div> 
     <div class="jeu">
         <h3 class="pdf-content">Téléchargement du jeu</h3>
+        <p class="texte-install">Cliquez sur le bouton ci-dessous pour télécharher le jeu :</p>
+
+        <a href="media/download/Build.zip" download="guide-de-téléchargement" class="download-link">
+            <div>
+                <img src="media/download/download-but-pdf.png" class="download-button" alt="pdf">
+            </div>
+        </a>
+        
 
     </div>
 
@@ -85,33 +96,29 @@
 
 <script>
 
-// let forest = document.getElementById('hole');
-// let originalWidth = forest.offsetWidth;
-// let lastScrollY = 0;
+const revealText = document.querySelector('.download-button')
 
-// window.addEventListener('scroll', function() {
-//     let currentScrollY = window.scrollY;
-//     let maxScrollY = 500; // La valeur maximale de défilement à laquelle vous souhaitez appliquer les styles max
-//     let maxTop = -40;
-//     let maxScale = 120;
-//     let maxLeft = -5;
-//     let maxWidth = 120;
+window.addEventListener('scroll', () => {
 
-//     // Calcul de la progression de défilement
-//     let progress = Math.min(currentScrollY / maxScrollY, 1); // Assure que la valeur de progression est entre 0 et 1
+    const { scrollTop, clientHeight} = document.documentElement;
 
-//     // Calcul des valeurs interpolées
-//     let top = -41 + (maxTop + 41) * progress;
-//     let scale = 100.2 + (maxScale - 100.2) * progress;
-//     let left = -0.4 + (maxLeft + 0.4) * progress;
-//     let width = 100.9 + (maxWidth - 100.9) * progress;
+    const deltaTop = revealText.getBoundingClientRect().top;
 
-//     // Application des styles interpolés à l'élément #hole
-//     forest.style.top = top + '%';
-//     forest.style.transform = 'scale(' + scale / 100 + ')';
-//     forest.style.left = left + '%';
-//     forest.style.width = width + '%';
-// });
+    if (scrollTop > (scrollTop + deltaTop).toFixed() *0.3) {
+        revealText.classList.add('active');
+    }
+})
+
+ let forest = document.getElementById('hole');
+ let bords = document.getElementById('plaines');
+ let originalWidth = forest.offsetWidth;
+ let lastScrollY = 0;
+
+ window.addEventListener('scroll', function() {
+    let currentScrollY = window.scrollY;
+  
+
+ });
 
 
 </script>
